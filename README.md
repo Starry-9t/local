@@ -3,7 +3,7 @@
 之前那个上传的方式不对 所以只有部分文件（但是现在好像就没有commit了...
 # 功能
    一个笔记本程序，可以用来写备忘录和记账。
-   ![image](https://github.com/Starry-9t/Note./blob/main/picture/0D46FF0A6DDE0B6481C478BE92D962B6.jpg)
+   ![image](https://github.com/Starry-9t/myhomework/blob/main/picture/0D46FF0A6DDE0B6481C478BE92D962B6.jpg)
    ![image](https://github.com/Starry-9t/Note./blob/main/picture/43941EE573D43F5DE319A5114D791346.jpg)
 
 # 实现
