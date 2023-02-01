@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_layout"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+<com.google.android.material.tabs.TabLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/tab_layout"
+    app:tabTextColor="@color/black"
+    app:tabSelectedTextColor="@color/black"
+    app:tabIndicatorColor="@color/white"/>
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/view_pager"
+        />
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/myToolbar"
+        android:divider="@color/white"
+        android:dividerHeight="8dp"
+
+        >
+    </ListView>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/myToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="?attr/toolbarTheme"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextColor="?attr/titleColor">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageButton
+        android:id="@+id/shubiao_ib"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="110dp"
+        android:background="@mipmap/bi1" />
+
+    <TextView
+            android:layout_width="20dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="35dp"
+            android:text="记账"
+            android:textSize="8dp" />
+</RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="14dp"
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_baseline_add_24" />
+
+</RelativeLayout>
